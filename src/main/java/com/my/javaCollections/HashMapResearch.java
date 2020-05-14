@@ -2,6 +2,7 @@ package com.my.javaCollections;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 
 /**
  * Created with Eldos.
@@ -33,9 +34,17 @@ public class HashMapResearch {
          */
         hashMap.put(1,1);
 
+        /*
+        对hashMap进行了一层包装
+         */
         HashSet<Integer> hashSet = new HashSet<Integer>();
         hashSet.add(1);
         hashSet.remove(1);
+        System.out.println(hashSet);
+
+        LinkedHashMap<Integer, Integer> linkedHashMap = new LinkedHashMap<Integer, Integer>();
+        linkedHashMap.get(1);
+
     }
 
 }
